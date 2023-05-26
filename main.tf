@@ -1,5 +1,6 @@
 provider "aws" {
-  region = var.region
+  allowed_account_ids = ["764189280545"]
+  region              = var.region
 }
 
 data "aws_ami" "ubuntu" {
